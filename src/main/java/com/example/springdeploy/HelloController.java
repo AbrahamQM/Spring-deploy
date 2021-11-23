@@ -12,6 +12,10 @@ public class HelloController {
     public String holaMundo(){ //Creamos una función que devuelva el String Hola mundo
         return "Hola a todos y todas";
     }
+    @GetMapping("/prueba") //Permite vincular una URL, al entrar con navegador en localhost:8080/hola accede a este controlador
+    public String holaPrueba(){ //Creamos una función que devuelva el String Hola mundo
+        return "Este es el texto creado desde el GetMapping (/prueba)";
+    }
 
     @GetMapping("/") //Ejemplo devolviendo html
     public String bootStrap(){
