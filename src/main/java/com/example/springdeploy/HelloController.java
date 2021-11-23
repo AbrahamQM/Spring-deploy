@@ -13,7 +13,7 @@ public class HelloController {
         return "Hola a todos y todas";
     }
 
-    @GetMapping("/bootstrap") //Ejemplo devolviendo html
+    @GetMapping("/") //Ejemplo devolviendo html
     public String bootStrap(){
         // Se puede usar """ texto""" para no tener que ir concatenando "textoA"+"textoB"+"textoC"+...
         return """
